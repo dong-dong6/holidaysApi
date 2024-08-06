@@ -3,14 +3,13 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/gorilla/mux"
+	"holidays/models"
 	"net/http"
 	"os"
 	"path/filepath"
 	"strings"
 	"time"
-
-	"github.com/gorilla/mux"
-	"holidays/models"
 )
 
 var data = make(map[string]models.YearData)
